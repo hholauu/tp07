@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP07 Nike</title>
+    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon">
+    <style>
+
+        /*header*/
+
+        #primer-encabezado {
+            background-color: #111111;
+            display: flex;
+            justify-content: center;
+        }
+        #p-primer-encabezado {
+            color: white;
+        }
+        #segundo-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F5F5F5;
+        }
+        #div-articulos {
+            display: flex;
+            margin-right: 40px;
+        }
+        .articulos-a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        .div-articulos-separaciones {
+            margin: 5px;
+        }
+        .div-separador {
+            display: flex;
+            margin-left: 60px;
+        }
+        #tercer-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+        }
+        .nav-div {
+            text-decoration: none;
+            color: black;
+            font-size: 17.2px;
+            margin: 12px;
+        }
+        p {
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        #bott:hover{
+            border-bottom: 2px solid;
+            padding-bottom: 15px;
+            font-size: 17px;
+        }
+        input {
+            border: none;
+            background-color: #f5f5f5;
+            padding: 0.6rem;
+            border-radius: 50px;
+            color: #ccc;
+            font-size: 1rem;
+            font-weight: 500;
+            height: 40px;
+            min-width: 180px;
+        }
+        #lupa {
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 50px;
+            background-color: #f5f5f5;
+            padding: 0.6rem;
+            color: #ccc;
+            font-size: 1rem;
+            font-weight: 500;
+            height: 40px;
+            min-width: 180px;
+            margin: 20px;
+            padding-left: 20px;
+        }
+        #bolsa {
+            margin-right: 60px;
+            margin-left: 20px;
+        }
+
+        /*main*/
+
+        #contenedor1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        #contenedor2 {
+            margin-left: 75px;
+            margin-right: 75px;
+            display: flex;
+            margin-bottom: 60px;
+        }
+        .imagenes {
+            width: 560px;
+        }
+        .lo_nuevo {
+            display: block;
+            color: #9e3500;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 20px;
+            position: static;
+            text-align: left;
+            padding: 0;
+            margin: 0 0 5px;
+        }
+        .nombre_del_producto_estilo {
+            font-weight: 500;
+            color: #000;
+        }
+        .producto_segunda_linea {
+            font-size: 1rem;
+            color: #757575;
+            height: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: start;
+        }
+        .precio {
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        body {
+            font-family: Helvetica-Neue, Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+            font-weight: 400;
+            text-transform: none;
+        }
+
+        /*footer*/
+
+        footer {
+            background-color: #111111;
+        }
+        #linea_1 {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #1D1E1E;
+            margin-right: 40px;
+        }
+        .titulos_footer {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            text-decoration: none;
+            color: white;
+        }
+        .separacion_de_ayuda {
+            margin-bottom: 20px;
+        }
+        #linea_2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #primer_espacio_linea2 {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="primer-encabezado">
+            <div style="align-items: center;">
+                <p id="p-primer-encabezado"><b>6 cuotas sin interés en todo el sitio</b></p>
+            </div>
+        </div>
+        <div id="segundo-encabezado">
+            <div class="div-separador">
+                <a href="https://www.nike.com.ar/nike/jordan" target="_blank"><img src="assets/logo-de-nike.svg" alt="logo de nike" width="25px"></a>
+            </div>
+            <div id="div-articulos">
+                <div class="div-articulos-separaciones">
+                    <p><a href="https://www.nike.com.ar/actualizacion-de-datos" class="articulos-a"><b>Suscribite</b></a></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><b>|</b></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><a href="https://www.nike.com.ar/locales" class="articulos-a"><b>Buscar tienda</b></a></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><b>|</b></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><a href="https://www.nike.com.ar/experiences" class="articulos-a"><b>Eventos</b></a></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><b>|</b></p>
+                </div>
+                <div class="div-articulos-separaciones">
+                    <p><a href="" class="articulos-a"><b>Ayuda</b></a></p>
+                </div>
+            </div>
+        </div>
+        <div id="tercer-encabezado">
+            <div class="div-separador">
+                <img src="assets/nike.svg" alt="imagen nike" width="60px">
+            </div>
+            <nav>
+                <div>
+                    <p><a href="https://www.nike.com.ar/destacados?page=2" class="nav-div" id="bott"><b>Destacados</b></a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.nike.com.ar/hombre" class="nav-div" id="bott"><b>Hombre</b></a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.nike.com.ar/mujer" class="nav-div" id="bott"><b>Mujer</b></a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.nike.com.ar/nike/nino-a?page=2" class="nav-div" id="bott"><b>Niño/a</b></a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.nike.com.ar/accesorios?page=2" class="nav-div" id="bott"><b>Accesorios</b></a></p>
+                </div>
+                <div>
+                    <p><a href="https://www.nike.com.ar/oportunidades?map=productclusternames&page=2" class="nav-div" id="bott"><b>Oportunidades</b></a></p>
+                </div>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div id="lupa">
+                    <div>
+                        <img src="assets/search.svg" alt="imagen de lupa" width="25px">
+                    </div>
+                    <div>
+                        <input type="text" class="lupa" placeholder="Buscar">
+                    </div>
+                </div>
+                <div id="bolsa">
+                    <a href=""><img src="assets/bolsa.png" alt="imagen de bolsa" width="35px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="contenedor1">
+            <div>
+                <p>87 Productos</p>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center; margin: 20px;">
+                    <div>
+                        <p>Ocultar Filtros</p>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <img src="assets/filtros.svg" alt="imagen de filtros" width="25px">
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px;">
+                    <div>
+                        <p>Ordenar por Más Reciente</p>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <img src="assets/flecha-abajo.png" alt="imagen de flecha abajo" width="10px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor2">
+            <div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/pelota1.webp" alt="imagen de la primera pelota" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Premier League Academy</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Pelota de Fútbol Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 69.999</b></p>
+                    </div>
+                </div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/pelota2.webp" alt="imagen de la segunda pelota" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Nike Futsal Pro</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Pelota de Futsal Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 84.999</b></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/mochila.webp" alt="imagen de la mochila" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Nike Heritage</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Mochila de Moda Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 77.999</b></p>
+                    </div>
+                </div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/gorra.webp" alt="imagen de la gora" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Nike DriFIT Rise</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Gorro de Moda Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 51.499</b></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/pelota3.webp" alt="imagen de la tercera pelota" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Premier League Flight</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Pelota de Futbol Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 239.999</b></p>
+                    </div>
+                </div>
+                <div style="margin: 15px;">
+                    <div class="imagenes">
+                        <img src="assets/pelota4.webp" alt="imagen de la cuarta pelota" width="100%">
+                    </div>
+                    <div class="lo_nuevo" style="height: 100%; width: 100%;">
+                        <p><b>Lo nuevo</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="nombre_del_producto_estilo">
+                        <p><b>Nike Phantom</b></p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="producto_segunda_linea">
+                        <p>Pelota de Futbol Unisex</p>
+                    </div>
+                    <div style="height: 100%; width: 100%;" class="precio">
+                        <p><b>$ 41.499</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="linea_1">
+            <div style="margin-top: 35px;">
+                <div style="margin-bottom: 30px;"><p><a class="titulos_footer" href="https://www.nike.com.ar/locales"><b>BUSCAR TIENDA</b></a></p></div>
+                <div style="margin-bottom: 30px;"><p><a class="titulos_footer" href="https://www.nike.com.ar/actualizacion-de-datos"><b>SUMATE A LA COMUNIDAD</b></a></p></div>
+                <div style="margin-bottom: 30px;"><p><a class="titulos_footer" href="https://www.nike.com.ar/help/nota/como-sigo-mi-pedido"><b>SEGUÍ TU PEDIDO</b></a></p></div>
+            </div>
+            <div style="margin-top: 35px;">
+                <div><p class="titulos_footer"><b>AYUDA</b></p></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Envíos y entregas</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Devoluciones</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Cambios</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Autogestionar mi devolución</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Opciones de pago</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Contactate</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Defensa al consumidor</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Libro de quejas online</a></div>
+                <div><p class="titulos_footer"><b>Botón de arrepentimiento</b></p></div>
+                <div style="margin-bottom: 40px;"><a style="font-size: 12px; color: #747274;" href="">Ver todos</a></div>
+            </div>
+            <div style="margin-top: 50px;">
+                <div class="separacion_de_ayuda"><a class="titulos_footer" href=""><b>ACERCA DE NIKE</b></a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Propósito</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Noticias</a></div>
+            </div>
+            <div style="margin-top: 50px;">
+                <div class="separacion_de_ayuda"><a class="titulos_footer" href=""><b>NOVEDADES NIKE</b></a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Encontrá tu calzado</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">¿Como elegir tu top?</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Tips saludables</a></div>
+                <div class="separacion_de_ayuda"><a style="font-size: 12px; color: #747274; text-decoration: none;" href="">Promociones</a></div>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href=""><img src="/assets/data.webp" alt="Data Fiscal" width="30px"></a>
+            </div>
+            <div style="margin-top: 50px; display: flex;">
+                <div style="margin-left: 25px;">
+                    <a href=""><img src="assets/x2.webp" alt="X" width="35px"></a>
+                </div>
+                <div style="margin-left: 25px;">
+                    <a href=""><img src="assets/f.png" alt="F" width="35px"></a>
+                </div>
+                <div style="margin-left: 25px;">
+                    <a href=""><img src="assets/y.png" alt="Y" width="35px"></a>
+                </div>
+                <div style="margin-left: 25px;">
+                    <a href=""><img src="assets/i.png" alt="I" width="35px"></a>
+                </div>
+            </div>
+        </div>
+        <div id="linea_2">
+            <div id="primer_espacio_linea2">
+                <div style="display: flex; align-items: center;">
+                    <div>
+                        <a href="https://www.nike.com/?geoselection=true"><img src="assets/ubi.png" alt="imagen de ubicación" width="15px"></a>
+                    </div>
+                    <div>
+                        <a style="text-decoration: none; color: white; font-size: 10px;" href="https://www.nike.com/?geoselection=true">Argentina</a>
+                    </div>
+                </div>
+                <div style="margin-left: 20px;">
+                    <p style="font-size: 10px; color: #747274;">© 2023 Southbay S.R.L. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; margin-right: 40px;">
+                <div style="margin-left: 20px ; margin-right: 20px;">
+                    <a style="font-size: 12px; color: #747274; text-decoration: none;" href="https://www.nike.com.ar/terminos-y-condiciones-hot-sale">Hot Sale</a>
+                </div>
+                <div style="margin-left: 20px ; margin-right: 20px;">
+                    <a style="font-size: 12px; color: #747274; text-decoration: none;" href="https://www.nike.com.ar/terminos-y-condiciones">Términos y Condiciones</a>
+                </div>
+                <div style="margin-left: 20px ; margin-right: 20px;">
+                    <a style="font-size: 12px; color: #747274; text-decoration: none;" href="https://www.nike.com.ar/politica-privacidad">Política de privacidad y cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
