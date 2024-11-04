@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Easy</title>
+    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon">
+    <style>
+        #tarjeta {
+            border: solid 1px #C7BDB8;
+            border-radius: 10px;
+            padding: 16px;
+            width: 270px;
+        }
+        #tarjeta-favorito {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        }
+        #tarjeta-cuotas {
+            position: absolute;
+            left: 20px;
+            top: 92px;
+        }
+        #tarjeta-descuento {
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div style="position: relative;" id="tarjeta">
+            <div id="tarjeta-favorito">
+                <img src="assets/corazon.svg" alt="imagen del corazon">
+            </div>
+            <div id="tarjeta-cuotas">
+                <img src="assets/cuotas.png" alt="imagen de cuotas">
+            </div>
+            <div style="display: flex; justify-content: center; border-bottom: solid 1px #C7BDB8;">
+                <img src="assets/tanque.webp" alt="imagen del tanque" width="169px">
+            </div>
+            <div>
+                <p><b>Señorial</b></p>
+            </div>
+            <div style="color: #554B47;">
+                <p>Termotanque Eléctrico<br>Teszp65 50Lt Señorial</p>
+            </div>
+            <div>
+                <div id="tarjeta-descuento">
+                    <p>-20%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
