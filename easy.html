@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Easy</title>
-    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/easylogo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
         #tarjeta {
+            position: relative;
             border: solid 1px #C7BDB8;
             border-radius: 10px;
             padding: 16px;
             width: 240px;
+            pointer-events: visible;
+            cursor: pointer;
         }
         #tarjeta-favorito {
             position: absolute;
@@ -21,6 +27,11 @@
             position: absolute;
             left: 20px;
             top: 140px;
+        }
+        #tarjeta-vistarapida {
+            position: absolute;
+            left: 75px;
+            top: 220px;
         }
         #tarjeta-imagen-termotanque {
             display: flex;
@@ -54,35 +65,41 @@
 </head>
 <body>
     <main>
-        <div style="position: relative;" id="tarjeta">
+        <div id="tarjeta">
             <div id="tarjeta-favorito">
-                <img src="assets/corazon.svg" alt="imagen del corazon">
+                <a href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><img src="assets/corazon.svg" alt="imagen del corazon"></a>
             </div>
             <div id="tarjeta-cuotas">
                 <img src="assets/cuotas.png" alt="imagen de cuotas">
+            </div>
+            <div id="tarjeta-vistarapida">
+                <div style="padding-left: 7px; padding-right: 7px; background-color: #F2F2F2; border-radius: 15px; display: flex; justify-content: center; align-items: center;">
+                    <img style="margin-right: 5px;" src="assets/ojoeasy.svg" alt="imagen del ojo">
+                    <p style="color: #36B2F7; font-size: 15px; font-family: 'Ubuntu', sans-serif;">Vista rápida</p>
+                </div>
             </div>
             <div id="tarjeta-imagen-termotanque">
                 <img src="assets/tanque.webp" alt="imagen del tanque" width="169px">
             </div>
             <div>
-                <p><b>Señorial</b></p>
+                <p style="font-family: 'Ubuntu', sans-serif;"><b>Señorial</b></p>
             </div>
             <div id="tarjeta-nombre-del-producto">
-                <p>Termotanque Eléctrico<br> Teszp65 50Lt Señorial</p>
+                <p style="font-family: 'Ubuntu', sans-serif;">Termotanque Eléctrico<br> Teszp65 50Lt Señorial</p>
             </div>
             <div style="display: flex; align-items: center;">
                 <div>
-                   <p id="tarjeta-descuento"><b>-20%</b></p>
+                   <p style="font-family: 'Ubuntu', sans-serif;" id="tarjeta-descuento"><b>-20%</b></p>
                 </div>
                 <div>
-                    <p style="text-decoration: line-through;">$299.995</p>
+                    <p style="font-family: 'Ubuntu', sans-serif;" style="text-decoration: line-through;">$299.995</p>
                 </div>
             </div>
             <div>
-                <p style="font-size: 22px;"><strong>$239.996</strong></p>
+                <p style="font-family: 'Ubuntu', sans-serif; font-size: 22px;"><strong>$239.996</strong></p>
             </div>
             <div id="tarjeta-boton-carrito">
-                <a id="tarjeta-boton-carrito-a" href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><b>Agregar al carrito</b></a>
+                <a font-size: 22px; id="tarjeta-boton-carrito-a" href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><b>Agregar al carrito</b></a>
             </div>
         </div>
     </main>
