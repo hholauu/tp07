@@ -10,20 +10,45 @@
             border: solid 1px #C7BDB8;
             border-radius: 10px;
             padding: 16px;
-            width: 270px;
+            width: 240px;
         }
         #tarjeta-favorito {
             position: absolute;
-            top: 5px;
+            top: 10px;
             right: 20px;
         }
         #tarjeta-cuotas {
             position: absolute;
             left: 20px;
-            top: 92px;
+            top: 140px;
+        }
+        #tarjeta-imagen-termotanque {
+            display: flex;
+            justify-content: center;
+            border-bottom: solid 1px #C7BDB8;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+        #tarjeta-nombre-del-producto {
+            color: #554B47;
         }
         #tarjeta-descuento {
-            
+            color: white;
+            background-color: #0097FF;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        #tarjeta-boton-carrito {
+            display: flex;
+            justify-content: center;
+            background-color: #F9BB10;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 7px;
+        }
+        #tarjeta-boton-carrito-a {
+            text-decoration: none;
+            color: #473D38;
         }
     </style>
 </head>
@@ -36,19 +61,28 @@
             <div id="tarjeta-cuotas">
                 <img src="assets/cuotas.png" alt="imagen de cuotas">
             </div>
-            <div style="display: flex; justify-content: center; border-bottom: solid 1px #C7BDB8;">
+            <div id="tarjeta-imagen-termotanque">
                 <img src="assets/tanque.webp" alt="imagen del tanque" width="169px">
             </div>
             <div>
                 <p><b>Señorial</b></p>
             </div>
-            <div style="color: #554B47;">
-                <p>Termotanque Eléctrico<br>Teszp65 50Lt Señorial</p>
+            <div id="tarjeta-nombre-del-producto">
+                <p>Termotanque Eléctrico<br> Teszp65 50Lt Señorial</p>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div>
+                   <p id="tarjeta-descuento"><b>-20%</b></p>
+                </div>
+                <div>
+                    <p style="text-decoration: line-through;">$299.995</p>
+                </div>
             </div>
             <div>
-                <div id="tarjeta-descuento">
-                    <p>-20%</p>
-                </div>
+                <p style="font-size: 22px;"><strong>$239.996</strong></p>
+            </div>
+            <div id="tarjeta-boton-carrito">
+                <a id="tarjeta-boton-carrito-a" href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><b>Agregar al carrito</b></a>
             </div>
         </div>
     </main>
